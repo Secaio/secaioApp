@@ -3,6 +3,7 @@
     --img-height: 100px;
     --img-width: 300px;
     --header-height: 150px;
+    --header-less:120px;
     --about-height: 800px;
     --menu-top-height: 70px;
     --aside-width: 225px;
@@ -46,4 +47,22 @@ main.content {
 
 footer.footer {
     grid-area: footer;
+}
+
+@media(max-width: 576px) {
+    .app {
+        margin: 0px;
+        display: grid;
+        grid-template-columns:  auto;
+        grid-template-rows:
+            var(--header-less)
+            1fr
+            var(--footer-height);
+        grid-template-areas:
+            "header"
+             "content"
+            "footer";
+            height: 100vh;
+        background-color: #F5F5F5;
+    }
 }

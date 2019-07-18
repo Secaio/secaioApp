@@ -8,9 +8,9 @@ export default props =>
     <React.Fragment>
         <Main>
             <div className="wrapper">
-                <div className="box1">
-                    <img src={img} alt="" ></img>
-                </div>
+                <div className="box1 col-xs-6">
+                    <img className="img-responsive .center-block" src={img} alt="" ></img>
+               </div> 
                 <div className="box2">
                     <div className="helopar">
                         <h6>HELLO EVERYBODY, I AM</h6>
