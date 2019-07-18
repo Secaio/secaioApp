@@ -1,0 +1,49 @@
+:root {
+    --bg-dark: rgb(194, 204, 209);
+    --img-height: 100px;
+    --img-width: 300px;
+    --header-height: 150px;
+    --about-height: 800px;
+    --menu-top-height: 70px;
+    --aside-width: 225px;
+    --footer-height: 50px;
+
+    --shadow: 
+        0 2px 23px 0 rgba(0, 0, 0, 0.1),
+        0 2px 49px 0 rgba(0, 0, 0, 0.06);
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.app {
+    margin: 0px;
+    display: grid;
+    grid-template-columns:  auto;
+    grid-template-rows:
+        var(--header-height)
+        1fr
+        var(--footer-height);
+    grid-template-areas:
+        "header"
+         "content"
+        "footer";
+        height: 100vh;
+    background-color: #F5F5F5;
+}
+
+
+header.header {
+    grid-area: header;
+}
+
+main.content {
+    grid-area: content;
+}
+
+footer.footer {
+    grid-area: footer;
+}
