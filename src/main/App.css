@@ -66,3 +66,21 @@ footer.footer {
         background-color: #F5F5F5;
     }
 }
+
+@media(max-width: 768px) {
+    .app {
+        margin: 0px;
+        display: grid;
+        grid-template-columns:  auto;
+        grid-template-rows:
+            var(--header-less)
+            1fr
+            var(--footer-height);
+        grid-template-areas:
+            "header"
+             "content"
+            "footer";
+            height: 100vh;
+        background-color: #F5F5F5;
+    }
+}
